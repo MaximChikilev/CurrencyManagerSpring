@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <title>Currency statistic</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+      <form action="/choice" method="POST">
+          <h3>What do you want to do with statistic :</h3>
+          <label for="startDate">Select a start date:</label>
+          <input type="date" id="startDate" name="startDate">
+          <label for="finishDate">Select a finish date:</label>
+          <input type="date" id="finishDate" name="finishDate">
+          <br>
+          <h4>1. Get average currency from period</h4>
+          <h4>2. Get currency from date. Target date must be between Start and finish date</h4>
+          <label for="targetDate">Select a target date:</label>
+          <input type="date" id="targetDate" name="targetDate">
+          <h4>3. Get max currency from period</h4>
+          <h4>Make you choice :</h4>
+          <label>
+              <input type="radio" name="choice" value="1"> 1
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="choice" value="2"> 2
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="choice" value="3"> 3
+          </label>
+          <br>
+          <br>
+          <input type="submit" />
+      </form>
+  </body>
+</html>
